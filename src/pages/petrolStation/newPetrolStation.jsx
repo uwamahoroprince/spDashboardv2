@@ -24,8 +24,8 @@ export function PetrolStation(props) {
     try {
       const responce = await axios.post(url.station, {
         locationName: name,
-        latitude: 1212,
-        longitude: 121212,
+        latitude: lat,
+        longitude: long,
         services: services,
       });
       console.log(responce);
